@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maraya</title>
+    <title>Log in Page</title>
 
     <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -18,86 +18,66 @@
             background-size: cover;
             filter: opacity(55%) grayscale(60%);
         }
-        /* .card-content{
-            position: absolute;
+        .symbol{
+            background-color: white !important;
+        }
+        input{
+            border: 0px !important;
+        }
 
-        } */
-        /* .validate-input{
-            position: relative;
-        } */
-        .symbol-mail{
-            position: absolute;
-            margin-top: 6px;
-            margin-left: -135px;
-        }
-        .symbol-key{
-            position: absolute;
-            margin-top: 4px;
-            margin-left: -135px;
-        }
-        .symbol-eye{
-            position: absolute;
-            margin-top: -31px;
-            margin-left: 115px;
-        }
 
     </style>
 </head>
 <body>
-    <div class="page mw-100"  id="chefs">
+    <div class="page mw-100">
         <div class="fixed-bg-image darkened-image2 mw-100" style="background-image: url('images/wp12216248-palm-tree-sunset-hd-wallpapers.jpg'); width: 1520px;"></div>
             <div class="col-12 col-lg-4">
                 <div class="card-content text-black position-absolute top-50 start-50 translate-middle" style="width: 70%;">
                   <div class="card rounded-5" style="background-color: rgb(230, 228, 228);">
                         <div class="row">
-                            <div class="col-8">
-                                <div class="card-body ms-5">
+                            <div class="col-12 col-lg-8">
+                                <div class="card-body ms-lg-5 ms-1">
                                     <div class="row g-0 text-center d-flex justify-content-center text-dark">
-                                        <h5 class="card-title text-start mb-3 " style="color: rgb(108, 23, 150); margin-top: 120px;">Log in</h5>
+                                        <h5 class="card-title text-lg-start text-cente mb-lg-3 mb-1 mt-5 pt-5" style="color: rgb(108, 23, 150); ">Log in</h5>
                                         <form class="">
                                             <div class="row mt-5">
-                                                <div class="col">
-                                                    <div class="wrap-input100 validate-input" >
-                                                        <span class="symbol-mail">
-                                                            <i class="bi bi-envelope-fill text-success" style="font-size: large;"></i>
-                                                        </span>
-                                                        <input type="text" class="form-control" placeholder="      Email" name="email"> 
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="input-group flex-nowrap0 mt-2" style="min-width: 170px;">
+                                                        <span class="input-group-text symbol" style="height: 42px; margin-top: -1px;"><i class="bi bi-envelope-fill text-success" style="font-size: large;"></i></span>
+                                                        <input type="email" class="form-control fw-light" style="height: 40px;;" placeholder="Email"/>
                                                     </div>
                                                 </div>
-                                                <div class="col">
-                                                    <div class="wrap-input100 validate-input" >
-                                                        <span class="symbol-key">
-                                                            <i class="bi bi-key-fill text-success" style="font-size: larger; "></i>
-                                                        </span>
-                                                        <input type="password" class="form-control" placeholder="      Password" name="pswd">
-                                                        <span class="symbol-eye">
-                                                            <span class="bi bi-eye-slash-fill text-success" style="font-size: large; "></span>
-                                                        </span>
+                                                <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+                                                    <div class="input-group flex-nowrap mt-2" style="min-width: 170px;">
+                                                        <span class="input-group-text symbol" style="height: 41.5px; margin-top: -1px;"><i class="bi bi-key-fill text-success" style="font-size: larger; "></i></span>
+                                                        <input type="password" class="form-control fw-light" style="height: 40px;" placeholder="Password"/>
+                                                        <span class="input-group-text bi bi-eye-slash-fill text-success symbol"  style="height: 41.5px; margin-top: -1px;"></span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
+                                    </div>
+                                    <div class="row mt-3 d-flex justify-content-start" style="font-size: 13.5px;">
+                                        <p class="text-start text-secondary">Did you forget your password? <a href="reset.html" style="color: rgb(108, 23, 150);">Reset Password</a> </p>
                                         
                                     </div>
-                                    <div class="row mt-3">
-                                        <p class="text-start text-secondary" style="font-size: 15px;">Did you forget your password? <a href="reset.html" style="color: rgb(108, 23, 150);">Reset Password</a></p>
+                                    <div class="row d-flex justify-content-center mt-3" style="font-size: 13.5px;">
+                                        <button type="button" class="btn text-white rounded-5" style="width: 150px; background-color: rgb(82, 18, 113);">Log in</button>
                                     </div>
-                                    
-                                <div class="row d-flex justify-content-center mt-3">
-                                    <button type="button" class="btn text-white rounded-5" style="width: 150px; background-color: rgb(82, 18, 113); font-size: 15px;">Log in</button>
-                                </div>
-                                <div class="row mt-5">
-                                    <p class="text-start text-secondary" style="font-size: 15px;">Don’t have an account? <a href="" style="color: rgb(108, 23, 150);">New Registration</a></p>
-                                </div>
+                                    <div class="row mt-5" style="font-size: 14px;">
+                                        <p class="text-start text-secondary" >Don’t have an account? <a href="registration.html" style="color: rgb(108, 23, 150);">New Registration</a> </p>
+                                        
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="d-none d-lg-block col-4">
                                 <img class="mw-100 img-fluid rounded-end-5" src="images/soon in saudi arabia.PNG" alt="">
                             </div>
                         </div>
                   </div>
                 </div>
             </div>
+        </div>
     </div>
 
     <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
