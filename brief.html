@@ -30,9 +30,6 @@
             background-size: cover;
             width: 1940px;
         }
-        /* .footer{
-            overflow-x:hidden
-        } */
         .icn-btns{
             height: 130px;
             max-width: 140px;
@@ -44,31 +41,44 @@
         }
         
         .carousel-indicators{
-            /* position: absolute;
-            margin-top: 100px !important; */
-            border-radius: 50% !important;
+            position: absolute;
             
         }
         .crsl-img{
-            width: 260px;
+            width: 400px;
         }
         .carousel-indicators >.dots{
             border-radius: 50%;
             width: 13px;
             height: 13px;
             background-color: lightgray !important;
+            /* bottom: 800px;
+            position: absolute;
+            margin-top: 20px; */
         }
         .carousel-indicators >.dots.active{
             background-color: rgb(104, 100, 100) !important;
-        }
-        @media (min-width: 1000px) {
-            .carousel-control-prev-icon{
+            /* bottom: 800px;
             position: absolute;
-            margin-right: 220px !important;
+            margin-top: 20px; */
+        }
+        
+        @media (min-width: 1000px) {
+        .carousel-control-prev-icon{
+            position: absolute;
+            margin-right: 170px !important;
+            margin-bottom: 200px !important;
         }
         .carousel-control-next-icon{
             position: absolute;
             margin-left: 220px !important;
+            margin-bottom: 200px !important;
+        }
+        .carousel-item{
+            max-height: 850px;
+        }
+        .slide{
+            height: 600px;
         }
             
         }
@@ -95,6 +105,17 @@
             width: 75px;
             height: 50px;
         }
+        .carousel-control-prev-icon{
+            position: absolute;
+            margin-right: 10px !important;
+            margin-bottom: 70px !important;
+        }
+        .carousel-control-next-icon{
+            position: absolute;
+            margin-left: 60px !important;
+            margin-bottom: 70px !important;
+        }
+        
             
         }
     </style> 
@@ -132,18 +153,18 @@
         </div>
     </div>
     <div class="row mw-100 mt-5">
-        <div id="carouselExampleIndicators" class="carousel carousel-dark slide  mx-auto">
+        <div id="carouselExampleIndicators" class="carousel carousel-dark mw-100">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="dots active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="dots" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="dots" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner ms-2 ms-lg-0">
+            <div class="carousel-inner ms-2">
                 <div class="carousel-item active">
                     <div class="row mw-100">
-                        <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class=" rounded-5 d-block w-75 mx-auto" alt="...">
+                        <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="slide rounded-5 d-block w-100 ms-3" alt="...">
                     </div>
-                    <div class="row mw-100 mt-4 d-flex me-3">
+                    <div class="row mw-100 mt-4 d-flex mx-3">
                         <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
                         <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
                         <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
@@ -151,9 +172,9 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row mw-100">
-                        <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class=" rounded-5 d-block w-75 mx-auto" alt="...">
+                        <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="slide rounded-5 d-block w-100 ms-3" alt="...">
                     </div>
-                    <div class="row mt-4 d-flex me-3">
+                    <div class="row mt-4 d-flex mx-3">
                         <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
                         <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
                         <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
@@ -161,9 +182,9 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row mw-100">
-                        <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class=" rounded-5 d-block w-75 mx-auto" alt="...">
+                        <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="slide rounded-5 d-block w-100 ms-3" alt="...">
                     </div>
-                    <div class="row mw-100 mt-4 d-flex me-3">
+                    <div class="row mw-100 mt-4 d-flex mx-3">
                         <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
                         <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
                         <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
