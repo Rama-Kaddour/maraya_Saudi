@@ -8,6 +8,10 @@
 
     <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
     <style>
         .page{
             position: relative;
@@ -38,7 +42,18 @@
         .icn-btns span{
             font-size: 40px;
         }
-        .carousel-control-prev-icon{
+        
+        .carousel-indicators{
+            /* position: absolute;
+            margin-top: 100px !important; */
+            border-radius: 50% !important;
+            
+        }
+        .crsl-img{
+            width: 300px;
+        }
+        @media (min-width: 1000px) {
+            .carousel-control-prev-icon{
             position: absolute;
             margin-right: 220px !important;
         }
@@ -46,10 +61,6 @@
             position: absolute;
             margin-left: 220px !important;
         }
-        .carousel-indicators{
-            /* position: absolute;
-            margin-top: 100px !important; */
-            border-radius: 50% !important;
             
         }
         @media (max-width: 800px) {
@@ -60,6 +71,20 @@
         .fixed-bg-image{
             height: 100%;
             width: auto;
+        }
+        .icn-btns{
+            height: 110px;
+            min-width: 95px !important;
+            margin: 0px 10px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .icn-btns span{
+            font-size: 30px;
+        }
+        .crsl-img{
+            width: 75px;
+            height: 50px;
         }
             
         }
@@ -77,7 +102,7 @@
             </div>
         </div>
     </div>
-    <div class="row mt-4 d-flex justify-content-center">
+    <div class="row mw-100 mt-4 d-flex justify-content-center">
         <div class="col-2 d-flex justify-content-end">
             <button class="icn-btns btn btn-lg text-white rounded-5" style="background-color: rgb(129, 99, 144);">
                 <span class="bi bi-hourglass-bottom d-block"></span>
@@ -97,14 +122,14 @@
             </button>
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mw-100 mt-5">
         <div id="carouselExampleIndicators" class="carousel carousel-dark slide w-75 mx-auto">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" style="height: 7px; width: 7px; border-radius: 50%;" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="height: 7px; width: 7px; border-radius: 50%;"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="height: 7px; width: 7px; border-radius: 50%;"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner rounded-4">
               <div class="carousel-item active">
                 <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="d-block w-100" alt="...">
               </div>
@@ -122,6 +147,33 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
           </div>
+    </div>
+    <div class="row mt-4 mw-100 mx-auto">
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex me-3 ">
+                    <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                    <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                    <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex me-3 ">
+                    <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                    <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                    <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex me-3 ">
+                    <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                    <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                    <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer text-center d-none d-lg-block mt-5 ">
