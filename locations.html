@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brief</title>
+    <title>Locations</title>
 
     <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -12,79 +11,79 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
-    <style>
-        .page{
-            position: relative;
-            height: 40vh;
-        }
-        .fixed-bg-image{
-            height: 100%;
-            background-size: cover;
-            width: 1540px;
-        }
-        .nav-btns{
-            position: absolute;
-            margin-top: -231px;
-        }
-        .sticky-bottom{
-            background-size: cover;
-            width: 1940px;
-        }
-        .icn-btns{
-            height: 130px;
-            max-width: 140px;
-            font-size: 15px;
-            font-weight: 600;
-        }
-        .icn-btns span{
-            font-size: 40px;
-        }
-        
-        .carousel-indicators{
-            position: absolute;
-            
-        }
-        .crsl-img{
-            width: 400px;
-        }
-        .carousel-indicators >.dots{
-            border-radius: 50%;
-            width: 13px;
-            height: 13px;
-            background-color: lightgray !important;
-            /* bottom: 800px;
-            position: absolute;
-            margin-top: 20px; */
-        }
-        .carousel-indicators >.dots.active{
-            background-color: rgb(104, 100, 100) !important;
-            /* bottom: 800px;
-            position: absolute;
-            margin-top: 20px; */
-        }
-        .crsl2-img{
-            width: 70px;
-            height: 60px;
-        }
-        .crsl-prv{
-            margin-left: 2480px;
-            margin-top: -15px !important;
-            border-radius: 50% !important;
-            background-color: rgb(67, 48, 48);
-            width: 25px;
-            height: 25px;
-        }
-        .crsl-nxt{
-            margin-right: 18px;
-            margin-top: -15px !important;
-            border-radius: 50% !important;
-            background-color: rgb(67, 48, 48);
-            width: 25px;
-            height: 25px;
-        }
+<style>
+    .page{
+        position: relative;
+        height: 40vh;
+    }
+    .fixed-bg-image{
+        height: 100%;
+        background-size: cover;
+        width: 1540px;
+    }
+    .nav-btns{
+        position: absolute;
+        margin-top: -231px;
+    }
+    .sticky-bottom{
+        background-size: cover;
+        width: 1940px;
+    }
+    .icn-btns{
+        height: 130px;
+        max-width: 140px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .icn-btns span{
+        font-size: 40px;
+    }
+    .crsl2-img{
+        width: 70px;
+        height: 60px;
+    }
+    .crsl-prv{
+        margin-left: 2480px;
+        margin-top: -15px !important;
+        border-radius: 50% !important;
+        background-color: rgb(67, 48, 48);
+        width: 25px;
+        height: 25px;
+    }
+    .crsl-nxt{
+        margin-right: 18px;
+        margin-top: -15px !important;
+        border-radius: 50% !important;
+        background-color: rgb(67, 48, 48);
+        width: 25px;
+        height: 25px;
+    }
 
 
-        @media (min-width: 1000px) {
+    .scrolling-wrapper {
+        overflow-y: hidden;
+        white-space: nowrap;
+        .card {
+            display: inline-block;
+        }
+    }
+    .card2 {
+        width: 230px;
+        height: 400px;
+    }
+    .scrolling-wrapper, .scrolling-wrapper-flexbox {
+        &::-webkit-scrollbar {
+            display: none;
+    }
+    }
+    .card-footer{
+        background-color: rgb(72, 233, 72);
+    }
+    .card-img-top{
+        width: 230px;
+        height: 340px;
+    }
+    @media (min-width: 1000px) {
         .carousel-control-prev-icon{
             position: absolute;
             margin-right: 170px !important;
@@ -95,15 +94,8 @@
             margin-left: 220px !important;
             margin-bottom: 200px !important;
         }
-        .carousel-item{
-            max-height: 850px;
-        }
-        .slide{
-            height: 600px;
-        }
-            
-        }
-        @media (max-width: 800px) {
+    }
+    @media (max-width: 800px) {
         .page{
             position: relative;
             height: 10vh;
@@ -122,10 +114,6 @@
         .icn-btns span{
             font-size: 30px;
         }
-        .crsl-img{
-            width: 75px;
-            height: 50px;
-        }
         .carousel-control-prev-icon{
             position: absolute;
             margin-right: 10px !important;
@@ -136,9 +124,16 @@
             margin-left: 60px !important;
             margin-bottom: 70px !important;
         }
-            
+        .card2 {
+            width: 160px;
+            height: 350px;
         }
-    </style> 
+        .card-img-top{
+            width: 160px;
+            height: 350px;
+        }
+        }
+</style>
 </head>
 <body>
     
@@ -174,65 +169,134 @@
             </button>
         </div>
     </div>
-    <div class="row mw-100 mt-5">
-        <div id="carouselExampleIndicators" class="carousel carousel-dark mw-100">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="dots active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="dots" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="dots" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner ms-2">
-                <div class="carousel-item active">
-                    <div class="row mw-100">
-                        <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="slide rounded-5 d-block w-100 ms-3" alt="...">
-                    </div>
-                    <div class="row mw-100 mt-4 d-flex mx-3">
-                        <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
-                        <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
-                        <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row mw-100">
-                        <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="slide rounded-5 d-block w-100 ms-3" alt="...">
-                    </div>
-                    <div class="row mt-4 d-flex mx-3">
-                        <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
-                        <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
-                        <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row mw-100">
-                        <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="slide rounded-5 d-block w-100 ms-3" alt="...">
-                    </div>
-                    <div class="row mw-100 mt-4 d-flex mx-3">
-                        <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
-                        <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
-                        <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+
+    <div class="row mw-100 d-lg-flex justify-content-center mt-4 ms-1 ms-lg-5 d-none">
+        <div class="scrolling-wrapper d-flex">
+            <div class="col-2 me-3">
+                <div class="card card2 rounded-3">
+                    <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-footer rounded-bottom-3">
+                    <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev text-black fs-1 fw-bold" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
+            <div class="col-2 me-3">
+                <div class="card card2 rounded-3">
+                    <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-footer rounded-bottom-3">
+                    <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-3">
+                <div class="card card2 rounded-3">
+                    <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-footer rounded-bottom-3">
+                    <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-3">
+                <div class="card card2 rounded-3">
+                    <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-footer rounded-bottom-3">
+                    <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-3">
+                <div class="card card2 rounded-3">
+                    <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-footer rounded-bottom-3">
+                    <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-3">
+                <div class="card card2 rounded-3">
+                    <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-footer rounded-bottom-3">
+                    <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-3">
+                <div class="card card2 rounded-3">
+                    <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                    <div class="card-footer rounded-bottom-3">
+                    <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row mw-100 p-lg-5 mt-5 ms-lg-5 ms-2">
-        <div class="col">
-            <h2 class="fw-bolder">Maraya</h2>
+    <div class="row mw-100 d-flex d-lg-none justify-content-center mt-4 ms-1">
+        <div class="col-6">
+            <div class="card card2 rounded-3">
+                <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                <div class="card-footer rounded-bottom-3">
+                <p class=" text-card text-center text-white fw-bolder fs-3 ">Dammam</p>
+                </div>
+            </div>
         </div>
-        <div class="col">
-            <h4 class="fw-bolder text-end me-3"><i class="bi bi-calendar2-week"></i> 3-4-2024</h4>
+        <div class="col-6">
+            <div class="card card2 rounded-3">
+                <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                <div class="card-footer rounded-bottom-3">
+                <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
+                </div>
+            </div>
         </div>
-        <p class="mt-3 lh-lg d-flex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At saepe id odit exercitationem quas, molestias non aliquid unde illum natus, ullam perspiciatis asperiores vitae? Aspernatur reprehenderit neque aliquid fugiat quidem repellendus, corporis enim assumenda distinctio perferendis quo deleniti similique facere, nemo quae adipisci omnis quos, soluta cum deserunt quibusdam velit! Laboriosam sapiente eius possimus quam dolor dicta aliquid aliquam cum tenetur molestiae! Minus voluptate illo accusantium veritatis iste, repellat deleniti nihil quibusdam beatae nobis! Vitae illum maiores, natus ut error asperiores? Ab, earum repudiandae cupiditate beatae illo hic. Fugit eligendi voluptates expedita? Ipsa possimus illo maxime corporis earum saepe laudantium pariatur, facilis eveniet quaerat ullam mollitia totam doloremque nulla voluptatibus obcaecati quas labore vero ea deleniti ab! Consectetur autem mollitia officiis perspiciatis quas voluptates quidem necessitatibus inventore facere hic illum, natus dignissimos accusantium, et atque repellat commodi nisi cum iusto quis. Officia aliquam cupiditate consequuntur itaque iure ad maxime ut fugit provident distinctio ducimus eum ipsam omnis velit ratione, totam excepturi. Odio, maiores neque aliquid eveniet necessitatibus quo dolore veniam deserunt corrupti laboriosam reiciendis officiis temporibus rerum id cumque, illo vitae itaque quis? Error deserunt laudantium quibusdam est excepturi quaerat laborum assumenda sunt necessitatibus voluptatibus repellendus corrupti numquam dolore, quos quasi incidunt perferendis quae nobis odit, sint, asperiores consequatur! Voluptatem provident itaque ipsam ipsum delectus perspiciatis tempore maiores fugiat vel sed ad, dignissimos, accusamus nulla qui unde nam officia ducimus laboriosam, soluta veritatis dicta mollitia repudiandae aliquid voluptatum. Quod deserunt porro architecto. Ad hic sed odio similique impedit cupiditate fugiat architecto exercitationem dignissimos iste. Laborum similique voluptatem atque fugit id, numquam in porro quaerat corrupti assumenda et quidem cupiditate nobis quisquam cumque corporis sunt iste. Fugiat qui perferendis accusamus beatae dolores officiis placeat nemo at maxime sed veniam quo, ab nam ratione iusto ducimus laborum pariatur in modi. Eaque, 
-            voluptatum. <span><h4 class="fw-bolder text-success text-end">www.soonsaudi.com</h4></span></p>
-        
     </div>
-    <div class="row mw-100 px-lg-5 mt-5 ms-lg-5 ms-2">
+    <div class="row mw-100 d-flex d-lg-none justify-content-center mt-4 ms-1">
+        <div class="col-6">
+            <div class="card card2 rounded-3">
+                <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                <div class="card-footer rounded-bottom-3">
+                <p class=" text-card text-center text-white fw-bolder fs-3 ">Dammam</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card card2 rounded-3">
+                <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                <div class="card-footer rounded-bottom-3">
+                <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mw-100 d-flex d-lg-none justify-content-center mt-4 ms-1">
+        <div class="col-6">
+            <div class="card card2 rounded-3">
+                <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                <div class="card-footer rounded-bottom-3">
+                <p class=" text-card text-center text-white fw-bolder fs-3 ">Dammam</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card card2 rounded-3">
+                <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                <div class="card-footer rounded-bottom-3">
+                <p class=" text-card text-center text-white fw-bolder fs-3">Dammam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mw-100 d-flex d-lg-none justify-content-center mt-4 ms-1">
+        <div class="col-6">
+            <div class="card card2 rounded-3">
+                <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="card-img-top rounded-top-3" alt="...">
+                <div class="card-footer rounded-bottom-3">
+                <p class=" text-card text-center text-white fw-bolder fs-3 ">Dammam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="row mw-100 px-lg-5 mt-5 ms-lg-5 ms-1">
         <h5 class="fw-bold">We work with</h5>
     </div>
     <div class="row mw-100 px-lg-5 mt-4 ms-lg-5 ms-1">
@@ -240,7 +304,7 @@
             <div class="card-body rounde-3">
                 <div id="carouselExampleDark" class="carousel carousel-dark d-none d-lg-block">
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
+                        <div class="carousel-item active">
                         <div class="row d-flex px-lg-5 pt-lg-4 pt-2">
                             <div class="col-2 text-center">
                                 <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
@@ -268,8 +332,8 @@
                             </div>
                             
                         </div>
-                      </div>
-                      <div class="carousel-item">
+                        </div>
+                        <div class="carousel-item">
                         <div class="row d-flex px-lg-5 pt-lg-4 pt-2">
                             <div class="col-2 text-center">
                                 <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
@@ -296,8 +360,8 @@
                                 <p class="fw-bold">Company</p>
                             </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
+                        </div>
+                        <div class="carousel-item">
                         <div class="row d-flex px-lg-5 pt-lg-4 pt-2">
                             <div class="col-2 text-center">
                                 <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
@@ -324,7 +388,7 @@
                                 <p class="fw-bold">Company</p>
                             </div>
                         </div>
-                      </div>
+                        </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon crsl-prv" aria-hidden="true"></span>
@@ -390,7 +454,7 @@
                     </div>
                 </div>
             </div>
-          </div>
+            </div>
     </div>
 </div>
 
