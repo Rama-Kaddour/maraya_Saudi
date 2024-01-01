@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+    <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+<style>
+    .page{
+        position: relative;
+        height: 40vh;
+    }
+    .fixed-bg-image{
+        height: 100%;
+        background-size: cover;
+        width: 1540px;
+    }
+    .nav-btns{
+        position: absolute;
+        margin-top: -231px;
+    }
+    .sticky-bottom{
+        background-size: cover;
+        width: 1940px;
+    }
+    .icn-btns{
+        height: 130px;
+        max-width: 140px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .icn-btns span{
+        font-size: 40px;
+    }
+    .crsl2-img{
+        width: 70px;
+        height: 60px;
+    }
+    .crsl-prv{
+        margin-left: 2480px;
+        margin-top: -15px !important;
+        border-radius: 50% !important;
+        background-color: rgb(67, 48, 48);
+        width: 25px;
+        height: 25px;
+    }
+    .crsl-nxt{
+        margin-right: 18px;
+        margin-top: -15px !important;
+        border-radius: 50% !important;
+        background-color: rgb(67, 48, 48);
+        width: 25px;
+        height: 25px;
+    }
+    @media (min-width: 1000px) {
+        .carousel-control-prev-icon{
+            position: absolute;
+            margin-right: 170px !important;
+            margin-bottom: 200px !important;
+        }
+        .carousel-control-next-icon{
+            position: absolute;
+            margin-left: 220px !important;
+            margin-bottom: 200px !important;
+        }
+    }
+    @media (max-width: 800px) {
+        .page{
+            position: relative;
+            height: 10vh;
+        }
+        .fixed-bg-image{
+            height: 100%;
+            width: auto;
+        }
+        .icn-btns{
+            height: 110px;
+            min-width: 95px !important;
+            margin: 0px 10px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .icn-btns span{
+            font-size: 30px;
+        }
+        .carousel-control-prev-icon{
+            position: absolute;
+            margin-right: 10px !important;
+            margin-bottom: 70px !important;
+        }
+        .carousel-control-next-icon{
+            position: absolute;
+            margin-left: 60px !important;
+            margin-bottom: 70px !important;
+        }
+            
+        }
+</style>
+</head>
+<body>
+    
+<div class="page mw-100">
+    <div class="fixed-bg-image mw-100" style="background-image: url('images/soon\ in\ saudi\ horizontally.PNG');"></div>
+    <div class="ms-4 row">
+        <div class="ms-4 ps-4 col-1">
+            <button class="nav-btns btn btn- text-white" style="background-color: rgba(211, 211, 211, 0.359);" ><span class="symbol"><i class="bi bi-person " style="font-size: larger"></i></span> Login</button>
+        </div>
+        <div class="col-2">
+            <button class="nav-btns btn btn- text-white" style="background-color: transparent !important;"> AR</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row ms-1 mw-100 mt-4 d-flex justify-content-center">
+        <div class="col-2 d-flex justify-content-end">
+            <button class="icn-btns btn btn-lg text-white rounded-5" style="background-color: rgb(129, 99, 144);">
+                <span class="bi bi-hourglass-bottom d-block"></span>
+                Soon In Saudi
+            </button>
+        </div>
+        <div class="col-2 d-flex justify-content-center">
+            <button class="icn-btns btn btn-lg text-white rounded-5" style="background-color: rgb(166, 136, 181);">
+                <span class="bi bi-scissors d-block"></span>
+                Launch Done
+            </button>
+        </div>
+        <div class="col-2 d-flex justify-content-start">
+            <button class="icn-btns btn btn-lg text-white rounded-5" style="background-color: rgb(166, 136, 181);">
+                <span class="bi bi-search d-block"></span>
+                Discover Saudi
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="pagination-container" >
+        <div data-page="1" >
+            <div class="row ms-1 ms-lg-4 mw-100 mt-5 d-flex justify-content-center" id="pg-1">
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-page="2" style="display:none;">
+            <div class="row ms-1 ms-lg-4 mw-100 mt-5 d-flex justify-content-center" id="pg-2">
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Z</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-page="3" style="display:none;">
+            <div class="row ms-1 ms-lg-4 mw-100 mt-5 d-flex justify-content-center" id="pg-3" data-page="3">
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Raya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card mb-3 rounded-3"  style="background-color: lightgray;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="w-100 h-100 rounded" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row mw-100">
+                                    <div class="col card-title d-flex">
+                                        <h3 class="fw-bolder">Maraya</h3>
+                                    </div>
+                                    <div class="col card-title d-flex justify-content-end mt-2">
+                                        <h5 class="fw-bolder"><i class="bi bi-calendar2-week"></i> 3-4-2024</h5>
+                                    </div>
+                                </div>
+                                <div class="row mw-100">
+                                    <p class="card-text mt-1 lh-lg d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore natus perferendis, exercitationem pariatur, optio ea ullam blanditiis dolor, quo velit adipisci sint hic dicta accusantium consequatur? Facere, modi deserunt? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, dolorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="text-center">
+            <div class="pagination pagination-centered">
+                <ul class="pagination ">
+                    <li class="page-item" data-page="-">
+                    <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item" data-page="1"><a class="page-link" href="#">1</a></li>
+                <li class="page-item" data-page="2"><a class="page-link" href="#">2</a></li>
+                <li class="page-item" data-page="3"><a class="page-link" href="#">3</a></li>
+                <li class="page-item" data-page="+">
+                    <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="pagination-container" >
+        <div data-page="1" >
+           <p>Content for Div Number 1</p>
+        </div>
+        <div data-page="2" style="display:none;">
+           <p>Content for Div Number 2</p>
+        </div>
+        <div data-page="3" style="display:none;">
+           <p>Content for Div Number 3</p>
+        </div>
+        <div data-page="4" style="display:none;">
+           <p>Content for Div Number 4</p>
+        </div>
+        <div data-page="5" style="display:none;">
+           <p>Content for Div Number 5</p>
+        </div>
+     
+        <div class="text-center">
+            <div class="pagination pagination-centered">
+                <ul class="pagination ">
+                    <li data-page="-" ><a href="#" >&lt;</a></li>
+                    <li data-page="1"><a href="#" >1</a></li>
+                    <li data-page="2"><a href="#" >2</a></li>
+                    <li data-page="3"><a href="#" >3</a></li>
+                    <li data-page="4"><a href="#" >4</a></li>
+                    <li data-page="5"><a href="#" >5</a></li>
+                    <li data-page="+"><a href="#" >&gt;</a></li>
+            </ul>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="row mw-100 px-lg-5 mt-5 ms-lg-5 ms-2">
+        <h5 class="fw-bold">We work with</h5>
+    </div>
+    <div class="row mw-100 px-lg-5 mt-4 ms-lg-5 ms-1">
+        <div class="card border-0 " style="background-color: rgb(240, 240, 240);">
+            <div class="card-body rounde-3">
+                <div id="carouselExampleDark" class="carousel carousel-dark d-none d-lg-block">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row d-flex px-lg-5 pt-lg-4 pt-2">
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row d-flex px-lg-5 pt-lg-4 pt-2">
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row d-flex px-lg-5 pt-lg-4 pt-2">
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                                <p class="fw-bold">Company</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon crsl-prv" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next ps-4" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon crsl-nxt" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="row mt-4 d-flex d-lg-none">
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                </div>
+                <div class="row mt-4 d-flex d-lg-none">
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                </div>
+                <div class="row mt-4 d-flex d-lg-none">
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                </div>
+                <div class="row mt-4 d-flex d-lg-none">
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
+                        <p class="fw-bold">Company</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="footer mw-100 text-center d-none d-lg-block mt-5 ">
+    <div class="sticky-bottom pb-0 mb-0 mw-100" style="background-image: url('images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg'); height:275px; ">
+    <div class="ms-5 p-4">
+        <div class="row d-flex mw-100 my-3 text-start mt-5 text-white">
+            <div class="col-lg-3 col-md-12 mb-4 ">
+            <div class="row d-flex align-items-center h-50">
+                <div class="col-3">
+                    <span class="bi bi-at" style="font-size: 60px;"></span>
+                </div>
+                <div class="col-9  ps-lg-0">
+                    <p class="fw-bold">Email us at</p>
+                    <p>1ksasoon@gmail.com</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-12 mb-4 pt-1 mb-lg-0">
+            <p class="fw-bold ">Helpfull links</p>
+            <p>Contact us</p>
+            <p>Who are we</p>
+            </div>
+            <div class="col-lg-3 col-md-12 mb-4 pt-1">
+                <p class="fw-bold ">Subscribe To The Newsletter</p>
+                <div class="input-group w-75">
+                    <input type="text" class="form-control">
+                    <button class="btn" type="button" style="background-color: rgb(108, 23, 150);"><span class="bi bi-envelope-fill text-white"></span></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 mb-4 pt-1">
+            <p class="fw-bold ">Subscribe To The Newsletter</p>
+            <div class="row mw-100">
+                <div class="col-md-6 col-sm-12 float-start d-flex">
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <span class="bi bi-envelope-fill"></span>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <i><?xml version="1.0" encoding="UTF-8"?>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="25px" viewBox="0 0 360 338.36" version="1.1">
+                            <g>
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 182.226563 334.628906 C 181.316406 334.628906 180.425781 334.601563 179.53125 334.558594 C 178.960938 334.601563 178.367188 334.628906 177.773438 334.628906 C 156.886719 334.628906 143.480469 325.152344 130.519531 315.988281 C 121.570313 309.664063 113.121094 303.691406 103.171875 302.035156 C 98.316406 301.230469 93.480469 300.824219 88.808594 300.824219 C 80.394531 300.824219 73.757813 302.121094 68.910156 303.070313 C 65.964844 303.644531 63.425781 304.140625 61.492188 304.140625 C 59.476563 304.140625 57.289063 303.703125 56.339844 300.457031 C 55.515625 297.648438 54.917969 294.921875 54.34375 292.289063 C 52.863281 285.507813 51.8125 281.335938 48.96875 280.898438 C 15.84375 275.785156 6.363281 268.808594 4.25 263.855469 C 3.949219 263.148438 3.78125 262.441406 3.738281 261.738281 C 3.632813 259.835938 4.980469 258.15625 6.859375 257.851563 C 57.78125 249.464844 80.613281 197.421875 81.5625 195.210938 C 81.589844 195.148438 81.613281 195.089844 81.644531 195.03125 C 84.761719 188.714844 85.371094 183.230469 83.464844 178.738281 C 79.96875 170.503906 68.574219 166.882813 61.027344 164.488281 C 59.183594 163.90625 57.433594 163.355469 56.050781 162.808594 C 40.996094 156.855469 39.746094 150.75 40.335938 147.636719 C 41.34375 142.328125 48.433594 138.632813 54.167969 138.632813 C 55.742188 138.632813 57.125 138.910156 58.289063 139.453125 C 65.0625 142.628906 71.164063 144.234375 76.429688 144.234375 C 83.707031 144.234375 86.882813 141.175781 87.273438 140.777344 C 87.085938 137.328125 86.855469 133.730469 86.621094 130.015625 C 85.105469 105.941406 83.226563 76.027344 90.84375 58.953125 C 113.671875 7.769531 162.078125 3.796875 176.371094 3.796875 C 176.734375 3.796875 182.636719 3.734375 182.636719 3.734375 L 183.480469 3.730469 C 197.808594 3.730469 246.320313 7.710938 269.160156 58.921875 C 276.777344 76.007813 274.894531 105.945313 273.375 130.003906 L 273.3125 131.046875 C 273.101563 134.398438 272.898438 137.652344 272.726563 140.769531 C 273.09375 141.140625 276.011719 143.953125 282.609375 144.207031 L 282.617188 144.207031 C 287.628906 144.015625 293.390625 142.417969 299.714844 139.453125 C 301.566406 138.589844 303.625 138.40625 305.027344 138.40625 C 307.167969 138.40625 309.335938 138.820313 311.136719 139.574219 L 311.246094 139.617188 C 316.359375 141.429688 319.710938 145.015625 319.78125 148.761719 C 319.847656 152.289063 317.15625 157.589844 303.949219 162.808594 C 302.578125 163.347656 300.828125 163.902344 298.976563 164.488281 C 291.425781 166.886719 280.03125 170.503906 276.539063 178.738281 C 274.628906 183.226563 275.242188 188.707031 278.355469 195.027344 C 278.382813 195.085938 278.414063 195.144531 278.441406 195.210938 C 279.386719 197.417969 302.203125 249.449219 353.144531 257.84375 C 355.023438 258.152344 356.367188 259.828125 356.265625 261.734375 C 356.222656 262.445313 356.050781 263.164063 355.742188 263.863281 C 353.644531 268.777344 344.171875 275.746094 311.035156 280.867188 C 308.328125 281.28125 307.277344 284.808594 305.660156 292.207031 C 305.074219 294.898438 304.480469 297.542969 303.660156 300.324219 C 302.957031 302.738281 301.453125 303.867188 298.921875 303.867188 L 298.511719 303.867188 C 296.753906 303.867188 294.257813 303.550781 291.09375 302.929688 C 285.484375 301.832031 279.195313 300.824219 271.191406 300.824219 C 266.519531 300.824219 261.683594 301.230469 256.824219 302.035156 C 246.882813 303.691406 238.441406 309.652344 229.507813 315.96875 C 216.519531 325.152344 203.117188 334.628906 182.226563 334.628906 "/>
+                            </g>
+                            </svg>
+                        </i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <i>
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="25px" y="25px"
+                                viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                            <path d="M16.7,0c1.7,0,3.5,0,5.2,0c0.1,2,0.8,4.1,2.3,5.6c1.5,1.5,3.6,2.2,5.7,2.4v5.4c-1.9-0.1-3.9-0.5-5.6-1.3
+                                c-0.8-0.3-1.5-0.8-2.2-1.2c0,3.9,0,7.8,0,11.7c-0.1,1.9-0.7,3.7-1.8,5.3c-1.7,2.6-4.8,4.2-7.9,4.3c-1.9,0.1-3.8-0.4-5.4-1.4
+                                C4.3,29,2.4,26.1,2.1,23c0-0.7,0-1.3,0-2c0.2-2.5,1.5-5,3.4-6.6c2.2-1.9,5.3-2.8,8.2-2.3c0,2-0.1,3.9-0.1,5.9
+                                c-1.3-0.4-2.9-0.3-4,0.5c-0.8,0.5-1.5,1.4-1.8,2.3c-0.3,0.7-0.2,1.4-0.2,2.1c0.3,2.2,2.4,4,4.7,3.8c1.5,0,2.9-0.9,3.7-2.1
+                                c0.3-0.4,0.5-0.9,0.5-1.4c0.1-2.4,0.1-4.8,0.1-7.1C16.7,10.7,16.7,5.4,16.7,0L16.7,0z"/>
+                            </svg>
+                        </i>
+
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 ms-auto mt-1">
+                
+                </div>
+            </div>
+            </div>
+        </div>
+        <p class="text-white">All rights reserved to this site <span class="fw-bold" style="color: rgb(108, 23, 150);">Soon In Saudi</span></p>
+            
+    </div>
+    </div>
+</div>
+
+
+    <!-- icons -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- pagination -->
+    <script>
+        var paginationHandler = function(){
+            // store pagination container so we only select it once
+            var $paginationContainer = $(".pagination-container"),
+                $pagination = $paginationContainer.find('.pagination ul');
+            // click event
+            $pagination.find("li a").on('click.pageChange',function(e){
+                e.preventDefault();
+                // get parent li's data-page attribute and current page
+            var parentLiPage = $(this).parent('li').data("page"),
+            currentPage = parseInt( $(".pagination-container div[data-page]:visible").data('page') ),
+            numPages = $paginationContainer.find("div[data-page]").length;
+            // make sure they aren't clicking the current page
+            if ( parseInt(parentLiPage) !== parseInt(currentPage) ) {
+            // hide the current page
+            $paginationContainer.find("div[data-page]:visible").hide();
+            if ( parentLiPage === '+' ) {
+                        // next page
+                $paginationContainer.find("div[data-page="+( currentPage+1>numPages ? numPages : currentPage+1 )+"]").show();
+            } else if ( parentLiPage === '-' ) {
+                        // previous page
+                $paginationContainer.find("div[data-page="+( currentPage-1<1 ? 1 : currentPage-1 )+"]").show();
+            } else {
+                // specific page
+                $paginationContainer.find("div[data-page="+parseInt(parentLiPage)+"]").show();
+                    }
+                }
+            });
+        };
+        $( document ).ready( paginationHandler );
+        </script>
+</body>
+</html>
