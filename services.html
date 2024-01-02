@@ -57,6 +57,60 @@
         width: 25px;
         height: 25px;
     }
+    .carousel-indicators{
+        position: absolute;
+        
+    }
+    .crsl-img{
+        width: 400px;
+    }
+    .carousel-indicators >.dot3{
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        background-color: lightgray !important;
+        position: absolute;
+        top: 35px;
+        margin-right: -55px;
+    }
+    .carousel-indicators >.dot2{
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        background-color: lightgray !important;
+        position: absolute;
+        top: 35px;
+        margin-right: -15px;
+    }
+    .carousel-indicators >.dot1{
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        background-color: rgb(104, 100, 100) !important;
+        position: absolute;
+        top: 35px;
+        margin-right: 25px;
+    }
+    .crsl2-img{
+        width: 70px;
+        height: 60px;
+    }
+    .crsl-prv{
+        margin-left: 2480px;
+        margin-top: -15px !important;
+        border-radius: 50% !important;
+        background-color: rgb(67, 48, 48);
+        width: 25px;
+        height: 25px;
+    }
+    .crsl-nxt{
+        margin-right: 18px;
+        margin-top: -15px !important;
+        border-radius: 50% !important;
+        background-color: rgb(67, 48, 48);
+        width: 25px;
+        height: 25px;
+    }
     .page-link{
         color: black ;
         background-color: #c9dcdd;
@@ -91,14 +145,15 @@
             width: auto;
         }
         .icn-btns{
-            height: 110px;
+            height: 120px;
             min-width: 95px !important;
             margin: 0px 10px;
             font-size: 13px;
             font-weight: 600;
         }
-        .icn-btns span{
-            font-size: 30px;
+        .crsl-img{
+            width: 75px;
+            height: 50px;
         }
         .carousel-control-prev-icon{
             position: absolute;
@@ -221,13 +276,19 @@
                 Discover Saudi
             </button>
         </div>
+        <div class="col-2"></div>
+        <div class="col-1 d-flex justify-content-end">
+            <button onclick="changeDisplay()" id="change-btn" class="btn btn-sm float-end" style="width: 57px; height: 52px;">
+                <img src="images/Group 43.png" class="w-75 h-75" style="rotate: 90deg;" alt="">
+            </button>
+        </div>
     </div>
 
 
 
 
 
-    <div class="pagination-container" >
+    <div class="pagination-container" id="pagination-change">
         <div data-page="1" >
             <div class="row ms-1 ms-lg-4 mw-100 mt-5 d-flex justify-content-center" id="pg-1">
                 <div class="col-12 col-lg-10">
@@ -1534,6 +1595,72 @@
             </div>
         </div>
     </div>
+    <div class="row mw-100 d-none" id="crsl-change">
+        <div class="row mw-100 mt-5">
+            <div id="carouselExampleIndicators" class="carousel carousel-dark mw-100">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="dot1 active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="dot2" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="dot3" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner ms-2">
+                    <div class="carousel-item active">
+                        <div class="row mw-100">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="slide rounded-5 d-block w-100 ms-3" alt="...">
+                        </div>
+                        <div class="row mw-100 mt-4 d-flex mx-3">
+                            <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                            <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                            <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mw-100">
+                            <img src="images/5c892170bf7870a0435d.png" class="slide rounded-5 d-block w-100 ms-3" alt="...">
+                        </div>
+                        <div class="row mt-4 d-flex mx-3">
+                            <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                            <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                            <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mw-100">
+                            <img src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" class="slide rounded-5 d-block w-100 ms-3" alt="...">
+                        </div>
+                        <div class="row mw-100 mt-4 d-flex mx-3">
+                            <div class="col-4 d-flex justify-content-end "><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                            <div class="col-4 d-flex justify-content-center"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                            <div class="col-4 d-flex justify-content-start"><img class="crsl-img rounded-4" src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev text-black fs-1 fw-bold" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div class="row text d-flex justify-content-center mw-100 mt-5 pt-4">
+            <div class="col-10 d-flex justify-content-center">
+                <div class="col">
+                    <h2 class="fw-bolder">Maraya</h2>
+                </div>
+                <div class="col">
+                    <h4 class="fw-bolder text-end"><i class="bi bi-calendar2-week"></i> 3-4-2024</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row text d-flex justify-content-center mt-3">
+            <div class="col-10 justify-content-center">
+                <p class="lh-lg d-flex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At saepe id odit exercitationem quas, molestias non aliquid unde illum natus, ullam perspiciatis asperiores vitae? Aspernatur reprehenderit neque aliquid fugiat quidem repellendus, corporis enim assumenda distinctio perferendis quo deleniti similique facere, nemo quae adipisci omnis quos, soluta cum deserunt quibusdam velit! Laboriosam sapiente eius possimus quam dolor dicta aliquid aliquam cum tenetur molestiae! Minus voluptate illo accusantium veritatis iste, repellat deleniti nihil quibusdam beatae nobis! Vitae illum maiores, natus ut error asperiores? Ab, earum repudiandae cupiditate beatae illo hic. Fugit eligendi voluptates expedita? Ipsa possimus illo maxime corporis earum saepe laudantium pariatur, facilis eveniet quaerat ullam mollitia totam doloremque nulla voluptatibus obcaecati quas labore vero ea deleniti ab! Consectetur autem mollitia officiis perspiciatis quas voluptates quidem necessitatibus inventore facere hic illum, natus dignissimos accusantium, et atque repellat commodi nisi cum iusto quis. Officia aliquam cupiditate consequuntur itaque iure ad maxime ut fugit provident distinctio ducimus eum ipsam omnis velit ratione, totam excepturi. Odio, maiores neque aliquid eveniet necessitatibus quo dolore veniam deserunt corrupti laboriosam reiciendis officiis temporibus rerum id cumque, illo vitae itaque quis? Error deserunt laudantium quibusdam est excepturi quaerat laborum assumenda sunt necessitatibus voluptatibus repellendus corrupti numquam dolore, quos quasi incidunt perferendis quae nobis odit, sint, asperiores consequatur! Voluptatem provident itaque ipsam ipsum delectus perspiciatis tempore maiores fugiat vel sed ad, dignissimos, accusamus nulla qui unde nam officia ducimus laboriosam, soluta veritatis dicta mollitia repudiandae aliquid voluptatum. Quod deserunt porro architecto. Ad hic sed odio similique impedit cupiditate fugiat architecto exercitationem dignissimos iste. Laborum similique voluptatem atque fugit id, numquam in porro quaerat corrupti assumenda et quidem cupiditate nobis quisquam cumque corporis sunt iste. Fugiat qui perferendis accusamus beatae dolores officiis placeat nemo at maxime sed veniam quo, ab nam ratione iusto ducimus laborum pariatur in modi. Eaque, 
+                    voluptatum. <span><h4 class="fw-bolder text-success text-end">www.soonsaudi.com</h4></span>
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!-- <div class="pagination-container" >
         <div data-page="1" >
@@ -1568,8 +1695,18 @@
     </div> -->
 
 
-    <div class="row mw-100 px-lg-5 mt-5 ms-lg-5 ms-2">
-        <h5 class="fw-bold">We work with</h5>
+    <div class="row d-flex mw-100 px-lg-5 mt-5 ms-lg-5 ms-2">
+        <div class="col d-flex">
+            <h5 class="fw-bold">We work with</h5>
+        </div>
+        <div class="col d-flex justify-content-end me-2">
+            <button class="me-2 rounded-circle border-0" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="bi bi-arrow-left"></span>
+            </button>
+            <button class="me-5 rounded-circle border-0" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="bi bi-arrow-right"></span>
+            </button>
+        </div>
     </div>
     <div class="row mw-100 d-flex justify-content-center mt-2 mb-5 ">
         <div class="ms-2 col-11">
@@ -1581,7 +1718,7 @@
                             <div class="row d-flex px-lg-5 pt-lg-4 pt-2">
                                 <div class="col-2 text-center">
                                     <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
-                                    <p class="fw-bold">Company</p>
+                                    <p class="fw-bold">1Company</p>
                                 </div>
                                 <div class="col-2 text-center">
                                     <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
@@ -1610,7 +1747,7 @@
                             <div class="row d-flex px-lg-5 pt-lg-4 pt-2">
                                 <div class="col-2 text-center">
                                     <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
-                                    <p class="fw-bold">Company</p>
+                                    <p class="fw-bold">2Company</p>
                                 </div>
                                 <div class="col-2 text-center">
                                     <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
@@ -1638,7 +1775,7 @@
                             <div class="row d-flex px-lg-5 pt-lg-4 pt-2">
                                 <div class="col-2 text-center">
                                     <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
-                                    <p class="fw-bold">Company</p>
+                                    <p class="fw-bold">3Company</p>
                                 </div>
                                 <div class="col-2 text-center">
                                     <img class="crsl2-img rounded-3 " src="images/low_poly_purple_abstract_art-wallpaper-1920x1080.jpg" alt="">
@@ -1663,12 +1800,6 @@
                             </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon crsl-prv" aria-hidden="true"></span>
-                        </button>
-                        <button class="carousel-control-next ps-4" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                            <span class="carousel-control-next-icon crsl-nxt" aria-hidden="true"></span>
-                        </button>
                     </div>
                     <div class="row mt-4 d-flex d-lg-none">
                         <div class="col-4 text-center">
@@ -1851,79 +1982,24 @@
         };
         $( document ).ready( paginationHandler );
     </script>
-    <!-- <script>
-        let pages = 10;
-        document.getElementById('pagination').innerHTML = createPagination(pages, 1);
 
-        function createPagination(pages, page) {
-        let str = '<ul>';
-        let active;
-        let pageCutLow = page - 1;
-        let pageCutHigh = page + 1;
-        // Show the Previous button only if you are on a page other than the first
-        if (page > 1) {
-            str += '<li class="page-item previous no"><a onclick="createPagination(pages, '+(page-1)+')">Previous</a></li>';
-        }
-        // Show all the pagination elements if there are less than 6 pages total
-        if (pages < 6) {
-            for (let p = 1; p <= pages; p++) {
-            active = page == p ? "active" : "no";
-            str += '<li class="'+active+'"><a onclick="createPagination(pages, '+p+')">'+ p +'</a></li>';
-            }
-        }
-        // Use "..." to collapse pages outside of a certain range
-        else {
-            // Show the very first page followed by a "..." at the beginning of the
-            // pagination section (after the Previous button)
-            if (page > 2) {
-            str += '<li class="no page-item"><a onclick="createPagination(pages, 1)">1</a></li>';
-            if (page > 3) {
-                str += '<li class="out-of-range"><a onclick="createPagination(pages,'+(page-2)+')">...</a></li>';
-            }
-            }
-            // Determine how many pages to show after the current page index
-            if (page === 1) {
-            pageCutHigh += 2;
-            } else if (page === 2) {
-            pageCutHigh += 1;
-            }
-            // Determine how many pages to show before the current page index
-            if (page === pages) {
-            pageCutLow -= 2;
-            } else if (page === pages-1) {
-            pageCutLow -= 1;
-            }
-            // Output the indexes for pages that fall inside the range of pageCutLow
-            // and pageCutHigh
-            for (let p = pageCutLow; p <= pageCutHigh; p++) {
-            if (p === 0) {
-                p += 1;
-            }
-            if (p > pages) {
-                continue
-            }
-            active = page == p ? "active" : "no";
-            str += '<li class="page-item '+active+'"><a onclick="createPagination(pages, '+p+')">'+ p +'</a></li>';
-            }
-            // Show the very last page preceded by a "..." at the end of the pagination
-            // section (before the Next button)
-            if (page < pages-1) {
-            if (page < pages-2) {
-                str += '<li class="out-of-range"><a onclick="createPagination(pages,'+(page+2)+')">...</a></li>';
-            }
-            str += '<li class="page-item no"><a onclick="createPagination(pages, pages)">'+pages+'</a></li>';
-            }
-        }
-        // Show the Next button only if you are on a page other than the last
-        if (page < pages) {
-            str += '<li class="page-item next no"><a onclick="createPagination(pages, '+(page+1)+')">Next</a></li>';
-        }
-        str += '</ul>';
-        // Return the pagination string to be outputted in the pug templates
-        document.getElementById('pagination').innerHTML = str;
-        return str;
-        }
+    <!-- change display mode pagination/carousel -->
+    
+    <script>
+        var btn = document.getElementById('change-btn')
+        var carousel = document.getElementById('crsl-change');
+        var pagination= document.getElementById('pagination-change');
+        
+        function changeDisplay() {
+            //toggle means add/remove
+            
+            carousel.classList.toggle('d-none');
+            pagination.classList.toggle('d-none');
 
-    </script> -->
+            //toggle means add/remove
+            
+        }
+    </script>
+    
 </body>
 </html>
